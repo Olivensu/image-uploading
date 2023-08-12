@@ -1,28 +1,19 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './Component/Navbar'
-import Grid from './Component/Grid'
-import axios from 'axios'
+import './app.css'
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import Header from './Pages/Shared/Header';
+
 
 function App() {
-  const [photos, setPhotos] = useState([])
-  useEffect(()=>{
-    axios.get(`http://localhost:5000/api/get`)
-    .then((res)=>{
-      console.log(res.data);
-      setPhotos(res.data)
-    })
-    .catch((err)=>{
-      console.log(err);
-    })
-  }, [])
+  
 
   return (
     <>
-      <Navbar></Navbar>
-      <Grid photos={photos}></Grid>
+      <div className='m-auto text-center'>
+        <Header></Header>
+      </div>
     </>
   )
 }
