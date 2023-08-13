@@ -21,6 +21,17 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import BookOnlineIcon from '@mui/icons-material/BookOnline';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import CameraRollIcon from '@mui/icons-material/CameraRoll';
+import BikeScooterIcon from '@mui/icons-material/BikeScooter';
+import BedroomParentIcon from '@mui/icons-material/BedroomParent';
+import SportsIcon from '@mui/icons-material/Sports';
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import StyleIcon from '@mui/icons-material/Style';
+import SanitizerIcon from '@mui/icons-material/Sanitizer';
+import Face4Icon from '@mui/icons-material/Face4';
+import ChildFriendlyIcon from '@mui/icons-material/ChildFriendly';
 
 const Header = () => {
 
@@ -305,8 +316,9 @@ const top100Films = [
       </IconButton>
       </div>
     </div>
-    <div className='bg-yellow pt-2'>
-      <div className='max-w-screen-xl mx-auto flex justify-between items-center'>
+    <div className='bg-yellow pt-2 mx-auto'>
+      <div className='mx-2 md:mx-10'>
+          <div className='max-w-screen-xl mx-auto flex justify-between items-center'>
           <div className='inline lg:hidden'>
           {['left',].map((anchor) => (
             <React.Fragment key={anchor}>
@@ -329,39 +341,114 @@ const top100Films = [
           <li>
             <details >
               <summary><MenuIcon /> <span className='text-black'>All Categories</span></summary>
-              <ul className='absolute'>
-                <li><a>level 2 item 1</a></li>
-                <li><a>level 2 item 2</a></li>
+              <ul className='absolute ml-[-9px] w-56 mt-2 py-3 bg-white'>
+                <li><a> <BookOnlineIcon  color="warning" style={{ fontSize: '1.5rem' }}></BookOnlineIcon>  Mobile & Laptops</a></li>
+                <li><a> <SportsEsportsIcon  color="warning" style={{ fontSize: '1.5rem' }}></SportsEsportsIcon>  Gaming Entertainment</a></li>
+                <li><a> <CameraRollIcon  color="warning" style={{ fontSize: '1.5rem' }}></CameraRollIcon>  Image & Video</a></li>
+                <li><a> <BikeScooterIcon  color="warning" style={{ fontSize: '1.5rem' }}></BikeScooterIcon>  Vehicles</a></li>
+                <li><a> <BedroomParentIcon  color="warning" style={{ fontSize: '1.5rem' }}></BedroomParentIcon>  Furnitures</a></li>
+                <li><a> <SportsIcon  color="warning" style={{ fontSize: '1.5rem' }}></SportsIcon>  Sport</a></li>
+                <li><a> <FastfoodIcon  color="warning" style={{ fontSize: '1.5rem' }}></FastfoodIcon>  Food & Drinks</a></li>
+                <li><a> <StyleIcon  color="warning" style={{ fontSize: '1.5rem' }}></StyleIcon>  Fashion Accessories</a></li>
+                <li><a> <SanitizerIcon  color="warning" style={{ fontSize: '1.5rem' }}></SanitizerIcon>  Toilet & Sanitation</a></li>
+                <li><a> <Face4Icon  color="warning" style={{ fontSize: '1.5rem' }}></Face4Icon>  Makeup Corner</a></li>
+                <li><a> <ChildFriendlyIcon  color="warning" style={{ fontSize: '1.5rem' }}></ChildFriendlyIcon>  Baby Items</a></li>
               </ul>
             </details>
           </li>
         </ul>
         <ul className="menu ml-3">
           <li>
+          Home
+          </li>
+        </ul>
+        <ul className="menu ml-3">
+          <li>
             <details >
-              <summary>Home</summary>
-              <ul className='absolute w-56 mt-5'>
-                <li><a>level 2 item 1</a></li>
-                <li><a>level 2 item 2</a></li>
+              <summary>Shop</summary>
+              <ul className="menu lg:menu-horizontal ml-[-50px] lg:ml-[-350px] lg:min-w-max bg-base-200 rounded-box absolute w-56 mt-2">
+  <li>
+    <a>Solutions</a>
+    <ul>
+      <li><a>Design</a></li>
+      <li><a>Development</a></li>
+      <li><a>Hosting</a></li>
+      <li><a>Domain register</a></li>
+    </ul>
+  </li>
+  <li>
+    <a>Enterprise</a>
+    <ul>
+      <li><a>CRM software</a></li>
+      <li><a>Marketing management</a></li>
+      <li><a>Security</a></li>
+      <li><a>Consulting</a></li>
+    </ul>
+  </li>
+  <li>
+    <a>Products</a>
+    <ul>
+      <li><a>UI Kit</a></li>
+      <li><a>Wordpress themes</a></li>
+      <li><a>Wordpress plugins</a></li>
+      <li>
+        <a>Open source</a>
+        <ul>
+          <li><a>Auth management system</a></li>
+          <li><a>VScode theme</a></li>
+          <li><a>Color picker app</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a>Company</a>
+    <ul>
+      <li><a>About us</a></li>
+      <li><a>Contact us</a></li>
+      <li><a>Privacy policy</a></li>
+      <li><a>Press kit</a></li>
+    </ul>
+  </li>
+</ul>
+            </details>
+          </li>
+        </ul>
+        <ul className="menu ml-3 hidden lg:inline">
+          <li>
+            <details >
+              <summary>Pages</summary>
+              <ul className='absolute w-56 mt-2 bg-white'>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms and Conditions</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Shop List View</a></li>
               </ul>
             </details>
           </li>
         </ul>
         <ul className="menu ml-3">
           <li>
-            <details >
-              <summary>Home</summary>
-              <ul className='absolute w-56 mt-5'>
-                <li><a>level 2 item 1</a></li>
-                <li><a>level 2 item 2</a></li>
-              </ul>
-            </details>
+          About
           </li>
         </ul>
+        <ul className="menu ml-3">
+          <li>
+          Blog
+          </li>
+        </ul>
+        <ul className="menu ml-3">
+          <li>
+          Contact
+          </li>
+        </ul>
+
+        <button className='bg-black text-white py-2 px-5 hidden lg:inline'>Become a Seller</button>
+          </div>
       </div>
     </div>
     </div>
   );
 }
 
-export default Header
+export default Header 
