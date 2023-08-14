@@ -341,7 +341,7 @@ const top100Films = [
           <li>
             <details >
               <summary><MenuIcon /> <span className='text-black'>All Categories</span></summary>
-              <ul className='absolute ml-[-9px] w-56 mt-2 py-3 bg-white'>
+              <ul className='absolute ml-[-9px] w-56 mt-2 py-3 bg-white  z-50'>
                 <li><a> <BookOnlineIcon  color="warning" style={{ fontSize: '1.5rem' }}></BookOnlineIcon>  Mobile & Laptops</a></li>
                 <li><a> <SportsEsportsIcon  color="warning" style={{ fontSize: '1.5rem' }}></SportsEsportsIcon>  Gaming Entertainment</a></li>
                 <li><a> <CameraRollIcon  color="warning" style={{ fontSize: '1.5rem' }}></CameraRollIcon>  Image & Video</a></li>
@@ -366,7 +366,7 @@ const top100Films = [
           <li>
             <details >
               <summary>Shop</summary>
-              <ul className="menu lg:menu-horizontal ml-[-50px] lg:ml-[-350px] lg:min-w-max bg-base-200 rounded-box absolute w-56 mt-2">
+              <ul className="menu lg:menu-horizontal ml-[-50px] lg:ml-[-350px] lg:min-w-max bg-white rounded-box absolute w-56 mt-2 z-50">
   <li>
     <a>Solutions</a>
     <ul>
@@ -418,7 +418,7 @@ const top100Films = [
           <li>
             <details >
               <summary>Pages</summary>
-              <ul className='absolute w-56 mt-2 bg-white'>
+              <ul className='absolute w-56 mt-2 bg-white  z-50'>
                 <li><a>Privacy Policy</a></li>
                 <li><a>Terms and Conditions</a></li>
                 <li><a>FAQ</a></li>
